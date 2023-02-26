@@ -1,0 +1,126 @@
+body {
+    margin-top: 3.5rem;
+    background-color: #eee9e8;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    color: gray;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul li {
+    font-size: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+legend {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.form-select {
+    margin-top: .5rem;
+}
+  
+  .Color {
+    float: left;
+    display: inline;
+    width: 23%;
+    height: 40px;
+    margin: 5px;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.3em;
+  }
+  .Color_small {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 1.3em;
+    text-align: center;
+    color: black;
+  }
+  
+  .Azul {
+    background-color: blue;
+    color: white;
+  }
+  
+  .Rojo {
+    background-color: red;
+    color: white;
+  }
+  
+  .Naranja {
+    background-color: orange;
+  }
+  
+  .Verde {
+    background-color: green;
+    color: white;
+  }
+  
+  .Violeta {
+    background-color: violet;
+  }
+  
+  .Amarillo {
+    background-color: yellow;
+  }
+  
+  .Marron {
+    background-color: brown;
+    color: white;
+  }
+  
+  .Rosa {
+    background-color: pink;
+  }
+  
+  span.negro {
+    background: black;
+    border-radius: 2.5em;
+    -moz-border-radius: 2.5em;
+    -webkit-border-radius: 2.5em;
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 15px;
+    text-align: center;
+    width: 10px;
+    height: 10px;
+    font-size: 1.5em;
+  }
+
+  span.blanco {
+    background: white;
+    border-radius: 2.5em;
+    -moz-border-radius: 2.5em;
+    -webkit-border-radius: 2.5em;
+    color: #000000;
+    font-weight: bold;
+    margin-right: 15px;
+    /*margin-right: 15px;*/
+    text-align: center;
+    width: 10px;
+    height: 10px;
+    font-size: 1.5em;
+  }
