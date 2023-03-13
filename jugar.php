@@ -49,11 +49,10 @@ RF7.2 Mostrar Jugadas anteriores ordenadas
             <fieldset>
                 <legend>Selecciona cuatro colores...</legend>
                 <form action="jugar.php" method="POST">
-                    <div class="row">
+                    <div class="row pb-3">
                         <?= Plantilla::genera_formulario_juego() ?>
                     </div>
                     <hr>
-                    <br>
                     <div class="row">
                         <div class="col-lg d-grid pb-2">
                         <input type="submit" value="Jugar" name="submit">
@@ -65,9 +64,10 @@ RF7.2 Mostrar Jugadas anteriores ordenadas
                         <input type="submit" value="Resetear clave" name="submit">
                         </div>
                     </div>
-                    
-                    
-                    
+                    <hr>
+                    <div class="container">
+                            <?= $informacion_clave ?>
+                    </div>
                 </form>
             </fieldset>
         </div>
@@ -75,12 +75,10 @@ RF7.2 Mostrar Jugadas anteriores ordenadas
         <div class="col-md-5 jugar">
             <fieldset>
                 <h2>INFORMACIÓN</h2>
+                <legend>Sección de información</legend>
                 <div class="container">
                     <div class="row">
-                    <fieldset>
-                        <legend>Sección de información</legend>
                         <h3><?= $informacion ?></h3>
-                    </fieldset>
                     </div>
                 </div>
             </fieldset>

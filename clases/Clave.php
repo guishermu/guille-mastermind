@@ -28,7 +28,8 @@ class Clave {
 
     public static function get_clave(array $clave) {
         $muestra = "";
-        $muestra .= "<div class='row'>";
+        $muestra = "<span>Clave secreta:</span>";
+        $muestra .= "<div class='row pt-2 pb-5'>";
         foreach(self::$clave as $color) {
             $muestra .= "<div class='col-lg $color text-center pt-2 pb-2'>";
             $muestra.="<span class='$color'>$color</span>";

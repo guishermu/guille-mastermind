@@ -47,7 +47,7 @@ class Jugada {
         for ($n = $this -> posiciones_acertadas; $n < $this -> colores_acertados; $n++) {
             $html_jugada .= "<span class='blanco'>$n</span>";
         }
-        $html_jugada .= "<div class='row'>";
+        $html_jugada .= "<div class='row pt-2 pb-3'>";
         foreach ($this -> colores as $color) {
             $html_jugada .= "<div class='col-lg $color text-center pt-2 pb-2'>";
             $html_jugada .= "<span class='$color'>$color</span>";
@@ -62,8 +62,9 @@ class Jugada {
         $jugadas = $_SESSION['jugadas'];
 
         foreach ($jugadas as $posicion=> $jugada) {
+            $posicion = $posicion + 1;
             $jugada = unserialize($jugada);
-            $html .= "Jugada $posicion: $jugada<br>"; 
+            $html .= "Jugada $posicion: $jugada"; 
         }
         
         return $html;

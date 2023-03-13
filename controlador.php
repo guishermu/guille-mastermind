@@ -8,21 +8,23 @@ $clave=Clave::obtener_clave();
 
 // Imprimimos la jugada:
 $jugada = $_POST['combinacion'];
-
 $mostrar_ocultar_clave="Mostrar clave";
+$informacion = Jugada::obtener_historico_jugadas();
+
 
 $opcion = $_POST['submit'] ?? "";
 switch ($opcion) {
     case "Mostrar clave":
         $mostrar_ocultar_clave = "Ocultar clave";
-        $informacion = Clave::get_clave($clave);
+        $informacion_clave = Clave::get_clave($clave);
         break;
     case "Ocultar clave":
         $mostrar_ocultar_clave = "Mostrar clave";
-        $informacion = "Nada que mostrar.";
+        $informacion_clave = "";
         break;
     case "Resetear clave":
         session_destroy();
+        $informacion = "¿Otra clave...?";
         break;
     case "Jugar":
         $jugada = new Jugada ($_POST['combinacion']);

@@ -11,12 +11,19 @@ $intento = sizeof($_SESSION['jugadas']);
 if ($win) {
     $msj = "<h1>Has acertado en $intento jugadas...</h1>";
 } else {
-    $msj = "<h1>Has agotado tus jugadas...</h1>";
+    $msj = "<h1>Has agotado tus jugadas...</h1>";  
 }
 
-// $html_clave = Clave::get_clave();
-$informacion = "<h2>Última clave utilizada: $html_clave</h2>";
+$html_clave = Clave::get_clave($clave);
+$informacion = "$html_clave";
 $informacion .= Jugada::obtener_historico_jugadas();
+
+if(isset($_POST['submit'])) {
+    session_destroy();
+    header("location: index.php");
+    exit();
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -35,12 +42,11 @@ $informacion .= Jugada::obtener_historico_jugadas();
         <div class="row justify-content-center">
             <div class="col-10 col-md-5">
             <div>
-                <form action="index.php" class="text-center pt-2 pb-5">
-                    <input type="submit" value="Volver al juego">
+                <form method="post" class="text-center pt-2 pb-5">
+                    <input type="submit" name="submit" value="Volver al juego">
                 </form>
             </div>
-            <p><?= $informacion ?></p>
-             
+            <?= $informacion ?>
             </div>
         </div>
     </div>

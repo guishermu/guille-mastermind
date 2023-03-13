@@ -27,8 +27,8 @@
                     <li>Tendrás un total de diez intentos para adivinar la clave.</li>
                     <li class="text-center pt-2 pb-3">¿Te atreves?</li>
                 </ul>
-                <form action="jugar.php" class="text-center pt-3 pb-2">
-                    <input class="" type="submit" value="Empezar a jugar">
+                <form action="jugar.php" method="post" class="text-center pt-3 pb-2">
+                    <input type="submit" value="Empezar a jugar">
                 </form>
             </div>
         </div>
