@@ -40,48 +40,37 @@ RF7.2 Mostrar Jugadas anteriores ordenadas
     </script>
 </head>
 <body>
-
-
-<div class="container">
-    <div class="row justify-content-evenly">
-        <div class="col-md-5 jugar">
-            <h2>OPCIONES</h2>
-            <fieldset>
-                <legend>Selecciona cuatro colores...</legend>
-                <form action="jugar.php" method="POST">
-                    <div class="row pb-3">
-                        <?= Plantilla::genera_formulario_juego() ?>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-lg d-grid pb-2">
-                        <input type="submit" value="Jugar" name="submit">
+    <div class="container">
+        <div class="row justify-content-evenly">
+            <div class="col-md-5 jugar">
+                <h2>Opciones</h2>
+                <fieldset>
+                    <legend>Selecciona cuatro colores...</legend>
+                    <form action="jugar.php" method="POST">
+                        <div class="row pb-3">
+                            <?= Plantilla::genera_formulario_juego() ?>
                         </div>
-                        <div class="col-lg d-grid pb-2">
-                        <input type="submit" value="<?= $mostrar_ocultar_clave ?>" name="submit">
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg d-grid pb-2">
+                                <input type="submit" value="Jugar" name="submit">
+                            </div>
+                            <div class="col-lg d-grid pb-2">
+                                <input type="submit" value="<?= $mostrar_ocultar_clave ?>" name="submit">
+                            </div>
+                            <div class="col-lg d-grid pb-2">
+                                <input type="submit" value="Resetear clave" name="submit">
+                            </div>
                         </div>
-                        <div class="col-lg d-grid pb-2">
-                        <input type="submit" value="Resetear clave" name="submit">
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="container">
+                        <hr>
+                        <div class="container">
                             <?= $informacion_clave ?>
-                    </div>
-                </form>
-            </fieldset>
-        </div>
-        
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
         <div class="col-md-5 jugar">
-            <fieldset>
-                <h2>INFORMACIÓN</h2>
-                <legend>Sección de información</legend>
-                <div class="container">
-                    <div class="row">
-                        <h3><?= $informacion ?></h3>
-                    </div>
-                </div>
-            </fieldset>
+            <?= $informacion ?>
         </div>
     </div>
 </div>

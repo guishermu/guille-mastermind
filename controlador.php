@@ -11,15 +11,11 @@ if(isset($jugada)) {
     $jugada = $_POST['combinacion'];
 }
 
-if(isset($informacion)) {
+if(isset($_SESSION['jugadas'])) {
     $informacion = Jugada::obtener_historico_jugadas();
 } else {
     $informacion = "";
 }
-
-if(isset($_SESSION['jugadas'])) {
-    $informacion = Jugada::obtener_historico_jugadas();
-} 
 
 $mostrar_ocultar_clave="Mostrar clave";
 $informacion_clave = "";
@@ -36,7 +32,7 @@ switch ($opcion) {
         break;
     case "Resetear clave":
         session_destroy();
-        $informacion = "¿Otra clave...?";
+        $informacion = "<h2>Clave regenerada</h2><h3>Juega otra vez...</h3>";
         break;
     case "Jugar":
         $jugada = new Jugada ($_POST['combinacion']);

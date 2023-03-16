@@ -60,12 +60,15 @@ class Jugada {
     public static function obtener_historico_jugadas() {
         $html = "";
         $jugadas = $_SESSION['jugadas'];
+        $html .= '<fieldset><h2>Información</h2><legend>Sección de información</legend><div class="container"><div class="row"><h3>';
 
         foreach ($jugadas as $posicion => $jugada) {
             $posicion = $posicion + 1;
             $jugada = unserialize($jugada);
             $html .= "Jugada $posicion: $jugada"; 
         }
+
+        $html .= '</h3></div></div></fieldset>';
         
         return $html;
     }
