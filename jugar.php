@@ -22,7 +22,7 @@ RF7.2 Mostrar Jugadas anteriores ordenadas
 
 
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">

@@ -7,10 +7,22 @@ session_start();
 $clave=Clave::obtener_clave();
 
 // Imprimimos la jugada:
-$jugada = $_POST['combinacion'];
-$mostrar_ocultar_clave="Mostrar clave";
-$informacion = Jugada::obtener_historico_jugadas();
+if(isset($jugada)) {
+    $jugada = $_POST['combinacion'];
+}
 
+if(isset($informacion)) {
+    $informacion = Jugada::obtener_historico_jugadas();
+} else {
+    $informacion = "";
+}
+
+if(isset($_SESSION['jugadas'])) {
+    $informacion = Jugada::obtener_historico_jugadas();
+} 
+
+$mostrar_ocultar_clave="Mostrar clave";
+$informacion_clave = "";
 
 $opcion = $_POST['submit'] ?? "";
 switch ($opcion) {

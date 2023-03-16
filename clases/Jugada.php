@@ -61,7 +61,7 @@ class Jugada {
         $html = "";
         $jugadas = $_SESSION['jugadas'];
 
-        foreach ($jugadas as $posicion=> $jugada) {
+        foreach ($jugadas as $posicion => $jugada) {
             $posicion = $posicion + 1;
             $jugada = unserialize($jugada);
             $html .= "Jugada $posicion: $jugada"; 
