@@ -74,6 +74,6 @@ RF7.2 Mostrar Jugadas anteriores ordenadas
         </div>
     </div>
 </div>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 </body>
-
 </html>
