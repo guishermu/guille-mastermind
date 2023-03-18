@@ -1,5 +1,6 @@
 body {
     margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
     background-color: #eee9e8;
 }
 
@@ -8,10 +9,10 @@ body {
 }
 
 h1 {
-    color: gray;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 900;
     text-align: center;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -102,29 +103,34 @@ legend {
   
   span.negro {
     background: black;
-    border-radius: 2.5em;
-    -moz-border-radius: 2.5em;
-    -webkit-border-radius: 2.5em;
+    border-radius: 2.5rem;
+    -moz-border-radius: 2.5rem;
+    -webkit-border-radius: 2.5rem;
     color: #ffffff;
     font-weight: bold;
-    margin-right: 15px;
+    margin-left: .75rem;
     text-align: center;
-    width: 10px;
-    height: 10px;
-    font-size: 1.5em;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    display: inline-block;
   }
 
   span.blanco {
     background: white;
-    border-radius: 2.5em;
-    -moz-border-radius: 2.5em;
-    -webkit-border-radius: 2.5em;
+    border-radius: 2.5rem;
+    -moz-border-radius: 2.5rem;
+    -webkit-border-radius: 2.5rem;
     color: #000000;
     font-weight: bold;
-    margin-right: 15px;
-    /*margin-right: 15px;*/
+    margin-left: .75rem;
     text-align: center;
-    width: 10px;
-    height: 10px;
-    font-size: 1.5em;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    display: inline-block;
+  }
+
+  legend {
+    font-size: 1rem;
   }

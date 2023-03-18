@@ -1,6 +1,7 @@
 <?php
 $carga = fn($clase)=>require("./clases/$clase.php");
 spl_autoload_register($carga);
+
 session_start();
 
 // Imprimimos la clave:
@@ -32,7 +33,7 @@ switch ($opcion) {
         break;
     case "Resetear clave":
         session_destroy();
-        $informacion = "<h2>Clave regenerada</h2><h3>Juega otra vez...</h3>";
+        $informacion = "<h2>Clave regenerada</h2><span>Juega otra vez...</span>";
         break;
     case "Jugar":
         $jugada = new Jugada ($_POST['combinacion']);
@@ -53,5 +54,4 @@ function evaluar_fin_juego(Jugada $jugada){
         exit();
     }
 }
-
 ?>

@@ -13,11 +13,8 @@ class Plantilla {
             }
             $html_select.="</select>";
             $html_select.="</div>";
-
         }
         return $html_select;
     }
-
-
 }
 ?>

@@ -15,7 +15,7 @@ if ($win) {
 }
 
 $html_clave = Clave::get_clave($clave);
-$informacion = "$html_clave";
+$informacion = $html_clave;
 $informacion .= Jugada::obtener_historico_jugadas();
 
 if(isset($_POST['submit'])) {
@@ -23,34 +23,38 @@ if(isset($_POST['submit'])) {
     header("location: index.php");
     exit();
 }
-
 ?>
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <title>Master Mind - Victoria</title>
+    <title>Master Mind - Resultado</title>
 </head>
+
 <body>
-<p><?= $msj ?></p>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-10 col-md-5">
-            <div>
-                <form method="post" class="text-center pt-2 pb-5">
-                    <input type="submit" name="submit" value="Volver al juego">
-                </form>
-            </div>
-            <?= $informacion ?>
+    <main>
+        <?= $msj ?>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-5">
+                    <div>
+                        <form method="post" class="text-center pt-2 pb-5">
+                            <input type="submit" name="submit" value="Nueva partida">
+                        </form>
+                    </div>
+                    <?= $informacion ?>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    </main>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
 
