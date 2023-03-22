@@ -1,0 +1,134 @@
+/* DM Sans */
+
+@font-face {
+    font-family: 'dm_sans';
+    src: url('dmsans-regular-webfont.eot');
+    src: url('dmsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dmsans-regular-webfont.woff2') format('woff2'),
+         url('dmsans-regular-webfont.woff') format('woff'),
+         url('dmsans-regular-webfont.ttf') format('truetype'),
+         url('dmsans-regular-webfont.svg#dm_sansregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dm_sans';
+    src: url('dmsans-italic-webfont.eot');
+    src: url('dmsans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dmsans-italic-webfont.woff2') format('woff2'),
+         url('dmsans-italic-webfont.woff') format('woff'),
+         url('dmsans-italic-webfont.ttf') format('truetype'),
+         url('dmsans-italic-webfont.svg#dm_sansitalic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'dm_sans';
+    src: url('dmsans-medium-webfont.eot');
+    src: url('dmsans-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dmsans-medium-webfont.woff2') format('woff2'),
+         url('dmsans-medium-webfont.woff') format('woff'),
+         url('dmsans-medium-webfont.ttf') format('truetype'),
+         url('dmsans-medium-webfont.svg#dm_sansmedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dm_sans';
+    src: url('dmsans-mediumitalic-webfont.eot');
+    src: url('dmsans-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dmsans-mediumitalic-webfont.woff2') format('woff2'),
+         url('dmsans-mediumitalic-webfont.woff') format('woff'),
+         url('dmsans-mediumitalic-webfont.ttf') format('truetype'),
+         url('dmsans-mediumitalic-webfont.svg#dm_sansmedium_italic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'dm_sans';
+    src: url('dmsans-bold-webfont.eot');
+    src: url('dmsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dmsans-bold-webfont.woff2') format('woff2'),
+         url('dmsans-bold-webfont.woff') format('woff'),
+         url('dmsans-bold-webfont.ttf') format('truetype'),
+         url('dmsans-bold-webfont.svg#dm_sansbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dm_sans';
+    src: url('dmsans-bolditalic-webfont.eot');
+    src: url('dmsans-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dmsans-bolditalic-webfont.woff2') format('woff2'),
+         url('dmsans-bolditalic-webfont.woff') format('woff'),
+         url('dmsans-bolditalic-webfont.ttf') format('truetype'),
+         url('dmsans-bolditalic-webfont.svg#dm_sansbold_italic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+
+/* Courier Prime */
+
+@font-face {
+    font-family: 'courier_prime';
+    src: url('courierprime-regular-webfont.eot');
+    src: url('courierprime-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('courierprime-regular-webfont.woff2') format('woff2'),
+         url('courierprime-regular-webfont.woff') format('woff'),
+         url('courierprime-regular-webfont.ttf') format('truetype'),
+         url('courierprime-regular-webfont.svg#courier_primeregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'courier_prime';
+    src: url('courierprime-italic-webfont.eot');
+    src: url('courierprime-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('courierprime-italic-webfont.woff2') format('woff2'),
+         url('courierprime-italic-webfont.woff') format('woff'),
+         url('courierprime-italic-webfont.ttf') format('truetype'),
+         url('courierprime-italic-webfont.svg#courier_primeitalic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'courier_prime';
+    src: url('courierprime-bold-webfont.eot');
+    src: url('courierprime-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('courierprime-bold-webfont.woff2') format('woff2'),
+         url('courierprime-bold-webfont.woff') format('woff'),
+         url('courierprime-bold-webfont.ttf') format('truetype'),
+         url('courierprime-bold-webfont.svg#courier_primebold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'courier_prime';
+    src: url('courierprime-bolditalic-webfont.eot');
+    src: url('courierprime-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('courierprime-bolditalic-webfont.woff2') format('woff2'),
+         url('courierprime-bolditalic-webfont.woff') format('woff'),
+         url('courierprime-bolditalic-webfont.ttf') format('truetype'),
+         url('courierprime-bolditalic-webfont.svg#courier_primebold_italic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+
+}

@@ -44,7 +44,7 @@ if(isset($_POST['submit'])) {
             <div class="row justify-content-center">
                 <div class="col-10 col-md-5">
                     <div>
-                        <form method="post" class="text-center pt-2 pb-5">
+                        <form method="post" class="text-center pt-5 pb-5">
                             <input type="submit" name="submit" value="Nueva partida">
                         </form>
                     </div>

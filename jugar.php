@@ -40,9 +40,7 @@ require_once "controlador.php";
                                 </div>
                             </div>
                             <hr>
-                            <div class="container">
-                                <?= $informacion_clave ?>
-                            </div>
+                            <?= $informacion_clave ?>
                         </form>
                     </fieldset>
                 </div>
